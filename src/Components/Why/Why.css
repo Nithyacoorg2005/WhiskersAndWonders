@@ -1,0 +1,86 @@
+.why-choose-us {
+    margin-top:100px;
+
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .why-choose-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+  
+  .reasons-container {
+  
+
+    margin-left:50px;
+    margin-right:50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .reason {
+    width:350px;
+    height:300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .reason:hover {
+    transform: scale(1.05);
+  }
+  
+  .reason .icon {
+    font-size: 3em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+  }
+  
+  .reason h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .reason p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .reasons-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .reasons-container {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+  }
+  

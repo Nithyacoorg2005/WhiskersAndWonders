@@ -1,0 +1,145 @@
+/* General page styling */
+.jackets-sweaters-page {
+   
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Page header */
+  .jackets-sweaters-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #4a4a8e;
+  }
+  
+  /* Grid styling for items */
+  .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+   
+  }
+  
+  /* Individual item cards */
+  .item-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .item-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .item-card h3 {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .item-card p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .item-card label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .item-card select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .item-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a4a8e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item-card button:hover {
+    background-color: #3d3d7e;
+  }
+  
+  /* Order form styling */
+  .order-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+  }
+  
+  .order-form h2 {
+    text-align: center;
+    color: #4a4a8e;
+  }
+  
+  .order-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .order-form input,
+  .order-form textarea,
+  .order-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .order-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4a4a8e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-form button:hover {
+    background-color: #3d3d7e;
+  }
+  
+  /* Success message styling */
+  .order-success {
+    text-align: center;
+    color: #4a4a8e;
+    background-color: #e6f4ea;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .order-success h2 {
+    color: #2e7d32;
+  }
+  
+  .order-success p {
+    color: #388e3c;
+  }
+  

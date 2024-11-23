@@ -1,0 +1,61 @@
+.homepage {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+     /* Hide any overflow from video */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Cover the entire area */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the video */
+    text-align: center;
+    color: white; /* Text color */
+    padding: 20px;
+    margin-top:200px;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Heading size */
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.5rem; /* Paragraph size */
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .btn {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for buttons */
+    color: black; /* Text color for buttons */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  

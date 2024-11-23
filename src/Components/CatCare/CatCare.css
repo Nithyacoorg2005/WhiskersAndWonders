@@ -1,0 +1,255 @@
+/* General Reset */
+
+  
+.cat-care-page {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Background Video Section */
+  /* .background-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+    
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+  } */
+  /* Background Video Section */
+.background-video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;/* Keeps the video behind the content */
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .video-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  .video-overlay p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Section Styling */
+  .info-section {
+    padding: 50px 10%;
+    background: #282828;
+    color: #fff;
+  }
+  
+  .info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff5757;
+  }
+  
+  .info-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .info-section li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+  }
+  
+  /* Watch and Learn Section */
+  .watch-learn-section {
+    padding: 50px 10%;
+    background: #222;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .watch-learn-section h2 {
+    font-size: 2.5rem;
+    color: #ff5757;
+    margin-bottom: 40px;
+  }
+  
+  .videos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .video-card {
+    width: 300px;
+    background: #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+  }
+  
+  .video-card p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Form Section */
+  .care-form-section {
+    padding: 50px 10%;
+    background: #282828;
+    color: #fff;
+  }
+  
+  .care-form-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff5757;
+  }
+  
+  .care-form-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .care-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .care-form input,
+  .care-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background: #333;
+    color: #fff;
+  }
+  
+  .care-form input:focus,
+  .care-form textarea:focus {
+    outline: none;
+    border-color: #ff5757;
+  }
+  
+  .care-form button {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #ff5757;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .care-form button:hover {
+    background: #e04f4f;
+  }
+  
+  .advice-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  .advice-section h3 {
+    font-size: 1.8rem;
+    color: #ff5757;
+  }
+  
+  .advice-section p {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .info-section,
+    .care-form-section {
+      padding: 30px 5%;
+    }
+  
+    .care-form input,
+    .care-form textarea,
+    .care-form button {
+      max-width: 100%;
+    }
+  
+    .videos-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

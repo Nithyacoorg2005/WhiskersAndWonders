@@ -1,0 +1,40 @@
+.lehenga-page {
+    text-align: center;
+  }
+  
+  .items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:20px;
+  }
+  
+  .item-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .order-form {
+    margin-top: 30px;
+  }
+  
+  .order-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-form label {
+    margin: 10px 0;
+  }
+  
+  .order-success {
+    margin-top: 30px;
+  }
+  

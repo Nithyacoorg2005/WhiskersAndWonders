@@ -1,0 +1,119 @@
+/* General Page Styling */
+.profile-update-page {
+  
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top:100px;
+  }
+  
+  /* Form Styling */
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-form h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .profile-form input[type="text"],
+  .profile-form input[type="number"],
+  .profile-form textarea,
+  .profile-form select,
+  .profile-form input[type="file"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .profile-form input[type="file"] {
+    border: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  .profile-form button {
+    background-color:#ff5757;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Profile Summary Styling */
+  .profile-summary {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .profile-summary h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .profile-summary p {
+    font-size: 16px;
+    color: #666;
+    margin: 8px 0;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Options Styling */
+  .image-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  
+  .image-option-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .image-option-button:hover {
+    background-color: #0069D9;
+  }
+  

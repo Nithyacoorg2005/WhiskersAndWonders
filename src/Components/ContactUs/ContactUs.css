@@ -1,0 +1,143 @@
+/* General Styling */
+.contact-us-page {
+
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.contact-us-page h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ff5757;
+}
+
+.intro-text {
+  text-align: center;
+  color: #777;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Contact Information Styling */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.contact-item span {
+  margin-left: 8px;
+  color: #ff5757;
+}
+
+/* Contact Form Styling */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff5757;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ff4141;
+}
+
+/* Thank You Message Styling */
+.thank-you-message {
+  text-align: center;
+}
+
+.thank-you-message h2 {
+  font-size: 28px;
+  color: #ff5757;
+}
+
+.thank-you-message p {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Social Media Section */
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media h3 {
+  font-size: 20px;
+  color: #ff5757;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #ff5757;
+  cursor: pointer;
+  transition: color 0.3s;
+  display: inline-flex;
+}
+
+.social-icon:hover {
+  color: #ff4141;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .contact-us-page {
+    padding: 15px;
+  }
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-form button {
+    font-size: 16px;
+  }
+}

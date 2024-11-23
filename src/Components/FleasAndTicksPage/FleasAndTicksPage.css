@@ -1,0 +1,149 @@
+/* Basic styling for the Fleas and Ticks page */
+.fleas-ticks-page {
+   
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+  }
+  
+  /* Item grid layout */
+  .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+  }
+  
+  .item-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .item-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .item-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .item-card h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .item-card p {
+    color: #555;
+    font-size: 0.95em;
+  }
+  
+  /* Price styling */
+  .item-price {
+    font-size: 1em;
+    margin: 8px 0;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #A9A9A9;
+  }
+  
+  .discounted-price {
+    color: #2E8B57;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  /* Button styling */
+  button {
+    background-color:#2E8B57;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #3CB371;
+  }
+  
+  /* Order Form styling */
+  .order-form {
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .order-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4A4A4A;
+  }
+  
+  .order-form label {
+    display: block;
+    font-size: 0.9em;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .order-form input, 
+  .order-form textarea, 
+  .order-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Payment methods styling */
+  .payment-methods h3 {
+    margin-top: 15px;
+    color: #4A4A4A;
+  }
+  
+  .payment-methods label {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 8px;
+  }
+  
+  .payment-methods input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  /* Success message styling */
+  .order-success {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #DFF2BF;
+    color: #4F8A10;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,157 @@
+
+
+  
+  .about-us-container {
+    width: 100%;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .values-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .icon-box {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    color: #56b381;
+  }
+  
+  .icon-box h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  /* Story Section */
+  .story-section {
+    display: flex;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .story-content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .story-image {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .story-text {
+    padding-left: 30px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    padding: 50px;
+    background-color: #56b381;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #eee;
+  }
+    

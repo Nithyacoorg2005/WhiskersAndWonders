@@ -1,0 +1,181 @@
+.adopt-page {
+    text-align: center;
+    padding: 20px;
+   
+  }
+  
+  .breed-section {
+    margin: 20px 0;
+    margin-left:100px;
+  }
+  
+  .cat-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+  }
+  
+  .cat-item {
+    margin: 15px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 330px;
+  }
+  
+  .cat-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    width: 600px;
+    border-radius: 10px;
+    position: relative;
+    
+  }
+  
+  
+  form label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .qr-code {
+    max-width: 200px;
+    margin-top: 10px;
+  }
+  
+  .payment-section {
+    margin-top: 20px;
+  }
+  
+  form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f04;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #c03;
+  }
+  
+  .submission-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* Mobile Styles */
+@media (max-width: 768px) {
+  .cat-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cat-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cat-item {
+    width: calc(50% - 20px);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  button {
+    width: auto;
+  }
+}
+
+/* @media (min-width: 1025px) {
+  .cat-item {
+    width: calc(33.33% - 40px);
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .modal-content {
+    width: 600px;
+  }
+}
+
+   */
