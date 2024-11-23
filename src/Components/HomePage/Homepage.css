@@ -1,8 +1,8 @@
 .homepage {
     position: relative;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh; 
     overflow: hidden;
-     /* Hide any overflow from video */
+     
   }
   
   .background-video {
