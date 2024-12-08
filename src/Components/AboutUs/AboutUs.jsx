@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import { FaPaw, FaHeart, FaTree, FaHandsHelping } from "react-icons/fa"; // Import icons
+import { FaPaw, FaHeart, FaTree, FaHandsHelping } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
