@@ -5,7 +5,7 @@ import { FaPaw, FaHeart, FaTree, FaHandsHelping } from "react-icons/fa"; // Impo
 const AboutUs = () => {
   return (
     <div className="about-us-container">
-      {/* Hero Section with Video Background */}
+     
       <section className="hero-section">
         <video className="hero-video" autoPlay loop muted>
           <source src="https://videos.pexels.com/video-files/1722593/1722593-hd_1920_1080_30fps.mp4" type="video/mp4" />
@@ -17,14 +17,14 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Mission and Vision Section */}
+
       <section className="mission-section">
         <h2 style={{marginTop:"100px"}}className="section-title">Our Mission</h2>
         <p className="section-paragraph">
           At Whisker and Wonders, we believe in creating a world where the beauty of nature and the companionship of pets come together. Our mission is to inspire people to embrace the wonders of the natural world while fostering deeper connections with their furry friends.
         </p>
 
-        {/* Icons to Highlight Key Values */}
+     
         <div className="values-icons">
           <div className="icon-box">
             <FaPaw className="icon" />
@@ -49,7 +49,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Story Section with Image */}
+ 
       <section style={{marginTop:"100px"}}className="story-section">
         <div style={{marginTop:"100px"}} className="story-content">
           <img className="story-image" src="https://images.pexels.com/photos/12201987/pexels-photo-12201987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Whisker and Wonders Team" />
@@ -65,14 +65,12 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section with Team Member Photos */}
      
 
-      {/* Call to Action Section */}
       <section style={{marginTop:"100px"}}className="cta-section">
         <h2 className="cta-title">Join Us in Our Journey</h2>
         <p className="cta-paragraph">Whether you're a pet owner, nature lover, or simply curious, there's a place for you in the Whisker and Wonders community. Follow our adventures and contribute to the cause.</p>
-        {/* <button className="cta-button">Explore More</button> */}
+  
       </section>
     </div>
   );
