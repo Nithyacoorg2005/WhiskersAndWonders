@@ -43,15 +43,15 @@ const BellsAndTagsPage = () => {
         description: ' for Cats (Green) (freebie)', 
         image: 'https://supertails.com/cdn/shop/files/Frame344684722.png?v=1719426013' 
       },
-    // Add more items here...
+
   ];
 
-  // Handle "Buy Now" click
+
   const handleBuyNow = () => {
     setShowForm(true);
   };
 
-  // Handle form submission and order confirmation
+
   const handleProceedToPay = () => {
     if (paymentMethod) {
       setOrderPlaced(true);
@@ -75,7 +75,7 @@ const BellsAndTagsPage = () => {
         ))}
       </div>
 
-      {/* Show form when Buy Now is clicked */}
+    
       {showForm && !orderPlaced && (
         <div className="order-form">
           <h2>Order Form</h2>
@@ -98,7 +98,7 @@ const BellsAndTagsPage = () => {
             </label>
 
             <h3>Select Payment Method</h3>
-            {/* Payment methods with corresponding inputs */}
+ 
             <label>
               <input 
                 type="radio" 
@@ -193,7 +193,7 @@ const BellsAndTagsPage = () => {
         </div>
       )}
 
-      {/* Order confirmation */}
+   
       {orderPlaced && (
         <div className="order-success">
           <h2>Order Placed Successfully!</h2>
