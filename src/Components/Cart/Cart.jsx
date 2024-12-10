@@ -5,35 +5,35 @@ const Cart = ({ cartItems, updateCart }) => {
   const [totalAmount, setTotalAmount] = useState(0);
   const [paymentMessage, setPaymentMessage] = useState(false);
 
-  // Calculate the total amount
+
   useEffect(() => {
     const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
     setTotalAmount(total);
   }, [cartItems]);
 
-  // Handle quantity increment
+
   const handleIncrement = (item) => {
     updateCart(item, item.quantity + 1);
   };
 
-  // Handle quantity decrement
+
   const handleDecrement = (item) => {
     if (item.quantity > 1) {
       updateCart(item, item.quantity - 1);
     }
   };
 
-  // Remove item from cart
+
   const handleRemove = (item) => {
     updateCart(item, 0);
   };
 
-  // Handle payment
+
   const handlePayment = () => {
-    // Simulate payment processing...
+
     setPaymentMessage(true);
 
-    // Hide the message after 5 seconds
+
     setTimeout(() => {
       setPaymentMessage(false);
     }, 5000);
