@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./AdoptPage.css"; // Custom CSS for layout and form styling
+import "./AdoptPage.css";
 import qrcode from '../../images/image copy.png'
 
 const AdoptPage = () => {
@@ -224,18 +224,16 @@ const AdoptPage = () => {
   const handleAdoptClick = (cat) => {
     setSelectedCat(cat);
     setIsFormOpen(true);
-    setSubmissionMessage(""); // Clear any previous submission messages
+    setSubmissionMessage(""); 
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    // Log form data to the console
     const formData = new FormData(e.target);
     const formValues = Object.fromEntries(formData.entries());
     console.log("Form Submitted Successfully!", formValues);
 
-    // Set the success message (200 characters)
     setSubmissionMessage(
       `Thank you for submitting the adoption form for ${selectedCat.name}! We are excited to help you adopt a cat. 
       Our team will contact you shortly via the email or phone number you provided. Once the payment is completed 
@@ -243,12 +241,9 @@ const AdoptPage = () => {
       will bring joy and happiness to your home.`
     );
 
-    setIsFormOpen(false); // Close the form after submission
+    setIsFormOpen(false); 
   };
-//   setTimeout(() => {
-//     setSubmissionMessage(""); // Clear the message after 7 seconds
-//   }, 7000);
-// };
+
 
   const closeModal = (e) => {
     if (modalRef.current && modalRef.current === e.target) {
@@ -260,10 +255,9 @@ const AdoptPage = () => {
     <div className="adopt-page">
       <h1 style={{marginTop:"120px",fontSize:"50px"}}>Adopt a Cat ??</h1>
 
-      {/* Display the success message */}
       {submissionMessage && <div className="submission-message">{submissionMessage}</div>}
 
-      {/* Display each breed with their cats */}
+
       {breeds.map((breed) => (
         <div key={breed.name} className="breed-section">
           <h2 style={{fontSize:"28px",marginLeft:"-80px"}}>{breed.name}</h2>
@@ -280,13 +274,13 @@ const AdoptPage = () => {
         </div>
       ))}
 
-      {/* If form is open, show the form modal */}
+    
       {isFormOpen && (
         <div   className="modal" ref={modalRef} onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h3 style={{marginTop:"80px"}}>Adopt {selectedCat.name} for {selectedCat.price}</h3>
             <form onSubmit={handleFormSubmit} className="adopt-form">
-              {/* Basic Information */}
+    
               <label>
                 Your Name: <input type="text" name="name" required />
               </label>
@@ -300,13 +294,11 @@ const AdoptPage = () => {
                 Address: <input type="text" name="address" required />
               </label>
 
-              {/* Additional Questions */}
               <label>
                 Why do you want to adopt a cat?
                 <textarea name="adoptionReason" required></textarea>
               </label>
 
-              {/* Payment Section */}
               <div className="payment-section">
                 <p>Total Amount: {selectedCat.price}</p>
                 <img style={{marginLeft:"180px",width:"150px",height:"150px"}}
