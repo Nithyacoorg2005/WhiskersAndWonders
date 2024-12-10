@@ -99,7 +99,7 @@
     width: 80%;
     margin: 0 auto;
   }
-  /* Mobile Styles */
+
 @media (max-width: 768px) {
   .cat-list {
     flex-direction: column;
@@ -133,7 +133,7 @@
   }
 }
 
-/* Tablet Styles */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .cat-item {
     width: calc(50% - 20px);
@@ -156,26 +156,3 @@
   }
 }
 
-/* @media (min-width: 1025px) {
-  .cat-item {
-    width: calc(33.33% - 40px);
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  .modal-content {
-    width: 600px;
-  }
-}
-
-   */
